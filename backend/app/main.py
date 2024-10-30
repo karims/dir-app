@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
-from app.summarizer import summarize_and_generate
-from app.database import save_summary_to_db
+
+from .summarizer import summarize_and_generate
+from .database import save_summary_to_db
 
 app = FastAPI()
 

@@ -1,7 +1,7 @@
 from haystack.pipelines import Pipeline
 from haystack.nodes import TransformersSummarizer
-from generator import generate_research_directions
-from utils import fetch_paper_text
+from .generator import generate_research_directions
+from .utils import fetch_paper_text
 
 
 def summarize_and_generate(arxiv_id: str):
